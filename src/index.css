@@ -229,6 +229,25 @@
   }
 }
 
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0, 0 0 30px #00ffe0;
+  }
+  50% {
+    text-shadow: 0 0 20px #00fff2, 0 0 40px #00fff2, 0 0 60px #00fff2;
+  }
+}
+
+.animate-glow {
+  animation: glow 2s infinite ease-in-out;
+}
+
+.text-neon {
+  color: #00ffe0;
+  font-weight: 800;
+}
+
+
 @layer utilities {
   @keyframes pulse {
     0%, 100% { opacity: 0.3; transform: scale(1); }

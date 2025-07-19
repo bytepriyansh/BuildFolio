@@ -81,6 +81,15 @@ export const Hero = () => {
         transition={{ delay: 3, duration: 1 }}
         className="text-center z-10 px-4"
       >
+         <motion.p
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 3.2, duration: 0.6 }}
+  className="text-lg md:text-xl lg:text-2xl font-semibold tracking-wide text-center mb-6 text-white animate-glow"
+>
+  TYPE <span className="font-extrabold text-black">PRIME</span> WITH YOUR KEYBOARD TO ENTER THE PRIME MODE FOR 10 SECONDS
+</motion.p>
+
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
